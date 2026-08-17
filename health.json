@@ -1,0 +1,82 @@
+{
+  "Adobe": {
+    "consecutive_failures": 0,
+    "last_job_count": 40,
+    "last_success": "2026-08-16T23:42:55.903141+00:00"
+  },
+  "Airbnb": {
+    "consecutive_failures": 0,
+    "last_job_count": 186,
+    "last_success": "2026-08-16T23:42:52.639828+00:00"
+  },
+  "Anthropic": {
+    "consecutive_failures": 0,
+    "last_job_count": 441,
+    "last_success": "2026-08-16T23:42:54.050002+00:00"
+  },
+  "Brex": {
+    "consecutive_failures": 0,
+    "last_job_count": 293,
+    "last_success": "2026-08-16T23:42:53.095869+00:00"
+  },
+  "Cloudflare": {
+    "consecutive_failures": 0,
+    "last_job_count": 304,
+    "last_success": "2026-08-16T23:42:53.643459+00:00"
+  },
+  "Coinbase": {
+    "consecutive_failures": 0,
+    "last_job_count": 169,
+    "last_success": "2026-08-16T23:42:52.373907+00:00"
+  },
+  "Databricks": {
+    "consecutive_failures": 0,
+    "last_job_count": 809,
+    "last_success": "2026-08-16T23:42:54.505355+00:00"
+  },
+  "Discord": {
+    "consecutive_failures": 0,
+    "last_job_count": 50,
+    "last_success": "2026-08-16T23:42:53.127515+00:00"
+  },
+  "Figma": {
+    "consecutive_failures": 0,
+    "last_job_count": 161,
+    "last_success": "2026-08-16T23:42:52.360844+00:00"
+  },
+  "Lyft": {
+    "consecutive_failures": 0,
+    "last_job_count": 171,
+    "last_success": "2026-08-16T23:42:52.791391+00:00"
+  },
+  "NVIDIA": {
+    "consecutive_failures": 0,
+    "last_job_count": 40,
+    "last_success": "2026-08-16T23:42:56.139719+00:00"
+  },
+  "Notion": {
+    "consecutive_failures": 2,
+    "last_error": "GET https://boards-api.greenhouse.io/v1/boards/notion/jobs failed after 3 attempts: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/notion/jobs?content=true",
+    "last_failure": "2026-08-16T23:42:56.123086+00:00"
+  },
+  "Robinhood": {
+    "consecutive_failures": 0,
+    "last_job_count": 124,
+    "last_success": "2026-08-16T23:42:52.478298+00:00"
+  },
+  "Salesforce": {
+    "consecutive_failures": 0,
+    "last_job_count": 40,
+    "last_success": "2026-08-16T23:42:55.217468+00:00"
+  },
+  "Stripe": {
+    "consecutive_failures": 0,
+    "last_job_count": 578,
+    "last_success": "2026-08-16T23:42:53.622715+00:00"
+  },
+  "Twilio": {
+    "consecutive_failures": 0,
+    "last_job_count": 157,
+    "last_success": "2026-08-16T23:42:53.066399+00:00"
+  }
+}

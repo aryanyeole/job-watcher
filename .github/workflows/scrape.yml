@@ -1,0 +1,94 @@
+name: Job Watcher
+
+# ---------------------------------------------------------------------------
+# TWO TIERS, TWO SCHEDULES
+#
+#   hot   ~20-50 target companies, every 30 min in business hours.
+#         Latency to alert: ~30-50 min.
+#   bulk  the long tail (can be thousands), twice a day.
+#         Latency to alert: up to ~12h — still ahead of a LinkedIn digest.
+#
+# Why not poll everything every 30 minutes? 2,000 boards x 48 polls/day is
+# ~96,000 requests. That's abusive, it will get your IP blocked, and a blocked
+# scraper is a scraper that finds nothing.
+#
+# HONEST NOTE ON TIMING: GitHub's scheduled workflows are best-effort. Under
+# platform load, runs are commonly delayed 5-20 minutes and are occasionally
+# skipped. Your real hot-tier latency is roughly (30 min) + (queue delay).
+# For tighter than that, move to a VPS with cron — see README.
+# ---------------------------------------------------------------------------
+
+on:
+  schedule:
+    # HOT: every 30 min, 7am-4pm Phoenix, weekdays. Arizona is UTC-7 all year
+    # (no DST), so 14:00 UTC = 7:00 AM Phoenix.
+    - cron: "*/30 14-23 * * 1-5"
+    # BULK: 13:00 and 01:00 UTC (6am and 6pm Phoenix), every day.
+    - cron: "0 13,1 * * *"
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: "Which tier to scrape"
+        type: choice
+        options: [hot, bulk, all]
+        default: all
+      seed:
+        description: "Seed state without alerting (first-time setup)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Serialize runs so the hot and bulk schedules never race on state.json.
+concurrency:
+  group: job-watcher
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Pick the tier from whichever cron fired, or from manual input.
+      - name: Resolve tier
+        id: tier
+        run: |
+          if [ -n "${{ inputs.tier }}" ]; then
+            echo "value=${{ inputs.tier }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 13,1 * * *" ]; then
+            echo "value=bulk" >> $GITHUB_OUTPUT
+          else
+            echo "value=hot" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run scraper
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ "${{ inputs.seed }}" = "true" ]; then
+            python -m src.main --tier all --seed
+          else
+            python -m src.main --tier ${{ steps.tier.outputs.value }}
+          fi
+
+      - name: Commit state
+        run: |
+          git config user.name "job-watcher-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json health.json history.csv 2>/dev/null || true
+          git diff --quiet --cached || git commit -m "state update (${{ steps.tier.outputs.value }}) [skip ci]"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          git push
