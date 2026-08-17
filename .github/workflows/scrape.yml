@@ -26,9 +26,9 @@ on:
     - cron: "*/20 15-23 * * *"   # 8am - 4:40pm         (every 20 min)
     - cron: "*/20 0-2 * * *"     # 5pm - 7:40pm         (every 20 min)
     - cron: "0 3-6 * * *"        # 8pm, 9pm, 10pm, 11pm (hourly)
-    # BULK — 6:15am and 6:15pm. The :15 offset avoids colliding with the
-    # hot schedule, which fires at :00, :20, :40.
-    - cron: "15 1,13 * * *"
+    # BULK — every 2 hours at :15, so it never collides with the hot
+    # schedule (which fires at :00, :20, :40).
+    - cron: "15 */2 * * *"
   workflow_dispatch:
     inputs:
       tier:
@@ -71,7 +71,7 @@ jobs:
         run: |
           if [ -n "${{ inputs.tier }}" ]; then
             echo "value=${{ inputs.tier }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event.schedule }}" = "15 1,13 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "15 */2 * * *" ]; then
             echo "value=bulk" >> $GITHUB_OUTPUT
           else
             echo "value=hot" >> $GITHUB_OUTPUT
