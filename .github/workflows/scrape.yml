@@ -20,11 +20,15 @@ name: Job Watcher
 
 on:
   schedule:
-    # HOT: every 30 min, 7am-4pm Phoenix, weekdays. Arizona is UTC-7 all year
-    # (no DST), so 14:00 UTC = 7:00 AM Phoenix.
-    - cron: "*/30 14-23 * * 1-5"
-    # BULK: 13:00 and 01:00 UTC (6am and 6pm Phoenix), every day.
-    - cron: "0 13,1 * * *"
+    # All times Phoenix (UTC-7, no DST).
+    # HOT — hourly in the quiet stretches, every 20 min in the busy middle.
+    - cron: "0 12-14 * * *"      # 5am, 6am, 7am        (hourly)
+    - cron: "*/20 15-23 * * *"   # 8am - 4:40pm         (every 20 min)
+    - cron: "*/20 0-2 * * *"     # 5pm - 7:40pm         (every 20 min)
+    - cron: "0 3-6 * * *"        # 8pm, 9pm, 10pm, 11pm (hourly)
+    # BULK — 6:15am and 6:15pm. The :15 offset avoids colliding with the
+    # hot schedule, which fires at :00, :20, :40.
+    - cron: "15 1,13 * * *"
   workflow_dispatch:
     inputs:
       tier:
@@ -67,7 +71,7 @@ jobs:
         run: |
           if [ -n "${{ inputs.tier }}" ]; then
             echo "value=${{ inputs.tier }}" >> $GITHUB_OUTPUT
-          elif [ "${{ github.event.schedule }}" = "0 13,1 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "15 1,13 * * *" ]; then
             echo "value=bulk" >> $GITHUB_OUTPUT
           else
             echo "value=hot" >> $GITHUB_OUTPUT
