@@ -206,10 +206,6 @@ def evaluate(job, company_cfg: dict, defaults: dict) -> tuple[bool, list[str]]:
     locations_blocked = company_cfg.get(
         "locations_none", defaults.get("locations_none_default", [])
     )
-    drop_citizenship = company_cfg.get(
-        "drop_citizenship_required",
-        defaults.get("drop_citizenship_required_default", True),
-    )
 
     if not title_matches(job.title, keywords_any, keywords_none, keywords_role):
         return False, []
@@ -217,8 +213,5 @@ def evaluate(job, company_cfg: dict, defaults: dict) -> tuple[bool, list[str]]:
         return False, []
 
     flags = analyze(job.description)
-
-    if drop_citizenship and requires_citizenship(job.description):
-        return False, flags
 
     return True, flags
