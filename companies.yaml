@@ -231,10 +231,6 @@ companies:
   method: ashby
   slug: clerk
   tier: bulk
-- name: ClickHouse
-  method: greenhouse
-  slug: clickhouse
-  tier: bulk
 - name: Cloudinary
   method: lever
   slug: cloudinary
@@ -494,10 +490,6 @@ companies:
 - name: Lyra Health
   method: lever
   slug: lyrahealth
-  tier: bulk
-- name: Marqeta
-  method: greenhouse
-  slug: marqeta
   tier: bulk
 - name: MasterClass
   method: greenhouse
@@ -827,10 +819,6 @@ companies:
   method: lever
   slug: spotify
   tier: bulk
-- name: Spring Health
-  method: ashby
-  slug: spring-health
-  tier: bulk
 - name: Squarepoint Capital
   method: greenhouse
   slug: squarepointcapital
@@ -983,6 +971,182 @@ companies:
   method: greenhouse
   slug: zscaler
   tier: hot
+- name: Arcadia
+  method: lever
+  slug: arcadia
+  tier: bulk
+- name: Arista Networks
+  method: smartrecruiters
+  slug: aristanetworks
+  tier: bulk
+- name: Bill.com
+  method: greenhouse
+  slug: billcom
+  tier: bulk
+- name: Braintrust
+  method: ashby
+  slug: braintrust
+  tier: bulk
+- name: CACI
+  method: smartrecruiters
+  slug: caci
+  tier: bulk
+- name: Canva
+  method: smartrecruiters
+  slug: canva
+  tier: bulk
+- name: Change Healthcare
+  method: ashby
+  slug: change
+  tier: bulk
+- name: Charles Schwab
+  method: greenhouse
+  slug: charles
+  tier: bulk
+- name: Circle
+  method: ashby
+  slug: circle
+  tier: bulk
+- name: ClickHouse
+  method: ashby
+  slug: clickhouse
+  tier: bulk
+- name: Coupa
+  method: lever
+  slug: coupa
+  tier: bulk
+- name: Devoted Health
+  method: smartrecruiters
+  slug: devotedhealth
+  tier: bulk
+- name: Disney
+  method: greenhouse
+  slug: disney
+  tier: bulk
+- name: Faire
+  method: greenhouse
+  slug: faire
+  tier: bulk
+- name: Fox Corporation
+  method: greenhouse
+  slug: fox
+  tier: bulk
+- name: Geico
+  method: smartrecruiters
+  slug: geico
+  tier: bulk
+- name: General Dynamics
+  method: greenhouse
+  slug: general
+  tier: bulk
+- name: Gopuff
+  method: lever
+  slug: gopuff
+  tier: bulk
+- name: iHeartMedia
+  method: smartrecruiters
+  slug: iheartmedia
+  tier: bulk
+- name: Match Group
+  method: lever
+  slug: matchgroup
+  tier: bulk
+- name: MetLife
+  method: lever
+  slug: metlife
+  tier: bulk
+- name: Microchip Technology
+  method: smartrecruiters
+  slug: microchip
+  tier: bulk
+- name: Natera
+  method: greenhouse
+  slug: natera
+  tier: bulk
+- name: Northwestern Mutual
+  method: smartrecruiters
+  slug: northwesternmutual
+  tier: bulk
+- name: Olo
+  method: lever
+  slug: olo
+  tier: bulk
+- name: Poshmark
+  method: ashby
+  slug: poshmark
+  tier: bulk
+- name: Pure Storage
+  method: greenhouse
+  slug: purestorage
+  tier: bulk
+- name: Qualtrics
+  method: greenhouse
+  slug: qualtrics
+  tier: bulk
+- name: Roku
+  method: greenhouse
+  slug: roku
+  tier: bulk
+- name: ServiceNow
+  method: smartrecruiters
+  slug: servicenow
+  tier: bulk
+- name: Smartsheet
+  method: greenhouse
+  slug: smartsheet
+  tier: bulk
+- name: SpaceX
+  method: greenhouse
+  slug: spacex
+  tier: bulk
+- name: StockX
+  method: greenhouse
+  slug: stockx
+  tier: bulk
+- name: SurveyMonkey
+  method: ashby
+  slug: surveymonkey
+  tier: bulk
+- name: Teladoc Health
+  method: smartrecruiters
+  slug: teladochealth
+  tier: bulk
+- name: Thoughtworks
+  method: greenhouse
+  slug: thoughtworks
+  tier: bulk
+- name: Truveta
+  method: greenhouse
+  slug: truveta
+  tier: bulk
+- name: Uber
+  method: smartrecruiters
+  slug: uber
+  tier: bulk
+- name: Uber Freight
+  method: greenhouse
+  slug: uberfreight
+  tier: bulk
+- name: US Bank
+  method: greenhouse
+  slug: us
+  tier: bulk
+- name: Wayfair
+  method: smartrecruiters
+  slug: wayfair
+  tier: bulk
+- name: Western Digital
+  method: smartrecruiters
+  slug: westerndigital
+  tier: bulk
+- name: Yext
+  method: greenhouse
+  slug: yext
+  tier: bulk
+- name: Zuora
+  method: greenhouse
+  slug: zuora
+  tier: bulk
 filters:
   keywords_any_default:
   - new grad
@@ -1032,30 +1196,29 @@ filters:
   - programmer
   - developer
   keywords_none_default:
-  - "electrical"
-  - "mechanical"
-  - "civil"
-  - "chemical"
-  - "industrial"
-  - "manufacturing"
-  - "validation"
-  - "hardware"
-  - "materials"
-  - "structural"
-  - "thermal"
-  - "propulsion"
-  - "avionics"
-  - "optical"
-  - "analog"
-  - "asic"
-  - "rf engineer"
+  - electrical
+  - mechanical
+  - civil
+  - chemical
+  - industrial
+  - manufacturing
+  - validation
+  - hardware
+  - materials
+  - structural
+  - thermal
+  - propulsion
+  - avionics
+  - optical
+  - analog
+  - asic
+  - rf engineer
   - senior
   - staff
   - principal
   - 'lead '
   - director
   - manager
-  - phd
   locations_default:
   - United States
   - USA
@@ -1079,31 +1242,30 @@ filters:
   - Phoenix
   - Tempe
   locations_none_default:
-  - "Canada"
-  - "Denmark"
-  - "United Kingdom"
-  - "Ireland"
-  - "India"
-  - "Germany"
-  - "Netherlands"
-  - "Poland"
-  - "Romania"
-  - "Singapore"
-  - "Australia"
-  - "Japan"
-  - "Israel"
-  - "Brazil"
-  - "Mexico"
-  - "France"
-  - "Spain"
-  - "Sweden"
-  - "Switzerland"
-  - "Portugal"
-  - "Czech"
-  - "Serbia"
-  - "Estonia"
-  - "Lithuania"
-  - "Philippines"
-  - "Argentina"
-  - "Colombia"
-  drop_citizenship_required_default: true
+  - Canada
+  - Denmark
+  - United Kingdom
+  - Ireland
+  - India
+  - Germany
+  - Netherlands
+  - Poland
+  - Romania
+  - Singapore
+  - Australia
+  - Japan
+  - Israel
+  - Brazil
+  - Mexico
+  - France
+  - Spain
+  - Sweden
+  - Switzerland
+  - Portugal
+  - Czech
+  - Serbia
+  - Estonia
+  - Lithuania
+  - Philippines
+  - Argentina
+  - Colombia
