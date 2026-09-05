@@ -1,0 +1,126 @@
+# ===========================================================================
+# ARIZONA TIERED TARGET LIST (from AZ_SWE_Job_Search_companies)
+# Companies with H-1B filing history, tiered by AZ presence + sponsorship.
+#
+# Append to data/companies_seed.txt, then run:
+#   python -m src.discover --input data/companies_seed.txt --merge companies.yaml
+#
+# Duplicates are harmless — the merge step skips anything already present.
+#
+# NOTE: entries marked [WORKDAY/CUSTOM] below will report "no public ATS
+# board found". They run Workday, Taleo, or in-house careers infra and must
+# be added by hand with a full careers_url. Discovery cannot find them.
+# ===========================================================================
+
+# ---- Tier A1: AZ-filed sponsors with active postings ----
+Axon
+Carvana
+Early Warning Services
+Blue Yonder
+Microchip Technology
+Avnet
+Republic Services
+PetSmart
+Motorola Solutions
+Choice Hotels International
+Western Alliance Bank
+Banner Health
+Blue Cross Blue Shield of Arizona
+DriveTime
+Circle K
+Shamrock Foods
+U-Haul
+Equity Methods
+Paradox
+SmartRent
+Virtuous Software
+eVisit
+Cable One
+Iridium Communications
+W. L. Gore & Associates
+Clearway Energy
+Orion Health
+Shutterfly
+Intel
+NVIDIA
+Honeywell
+Arizona Public Service
+
+# ---- Tier A2: AZ-filed, no current posting signal ----
+GoDaddy
+onsemi
+ON Semiconductor
+TSMC Arizona
+Opendoor
+Nextiva
+InEight
+First Solar
+Align Technology
+Axway
+VIAVI Solutions
+Amkor Technology
+ASML
+Gen Digital
+NortonLifeLock
+Cox Communications
+Nikola
+Reputation
+Clarivate
+Trax Technologies
+RevSpring
+Parchment
+WebPT
+KUBRA
+RadiusAI
+OneOrigin
+qbotica
+Girikon
+Privoro
+Apple
+
+# ---- Tier B: national sponsors with AZ engineering sites ----
+Amazon
+Microsoft
+Google
+American Express
+JPMorgan Chase
+Wells Fargo
+Charles Schwab
+USAA
+Vanguard
+Northern Trust
+PayPal
+Discover Financial
+Databricks
+Stripe
+Snowflake
+Confluent
+MongoDB
+Twilio
+ServiceNow
+Salesforce
+Workiva
+Zscaler
+CrowdStrike
+
+# ---- Tier C: IT services / consultancies (high sponsorship volume) ----
+Cognizant
+Infosys
+Accenture
+Capgemini
+HCL America
+HCLTech
+Tata Consultancy Services
+LTIMindtree
+EPAM Systems
+IntraEdge
+M3BI
+NucleusTeq
+Clairvoyant
+Kollasoft
+Apptad
+TechMileage Software Solutions
+Galaxy i Technologies
+Artha Data Solutions
+MindQuest Technology Solutions
+Collabera

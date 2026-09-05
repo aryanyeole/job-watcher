@@ -1147,6 +1147,62 @@ companies:
   method: greenhouse
   slug: zuora
   tier: bulk
+- name: Align Technology
+  method: greenhouse
+  slug: align
+  tier: bulk
+- name: Axon
+  method: greenhouse
+  slug: axon
+  tier: bulk
+- name: Blue Cross Blue Shield of Arizona
+  method: lever
+  slug: blue
+  tier: bulk
+- name: Carvana
+  method: greenhouse
+  slug: carvana
+  tier: bulk
+- name: Clearway Energy
+  method: greenhouse
+  slug: clearway
+  tier: bulk
+- name: Galaxy i Technologies
+  method: smartrecruiters
+  slug: galaxyitechnologies
+  tier: bulk
+- name: Gen Digital
+  method: ashby
+  slug: gen-digital
+  tier: bulk
+- name: GoDaddy
+  method: greenhouse
+  slug: godaddy
+  tier: bulk
+- name: M3BI
+  method: smartrecruiters
+  slug: m3bi
+  tier: bulk
+- name: Nextiva
+  method: greenhouse
+  slug: nextiva
+  tier: bulk
+- name: Paradox
+  method: ashby
+  slug: paradox
+  tier: bulk
+- name: SmartRent
+  method: greenhouse
+  slug: smartrent
+  tier: bulk
+- name: U-Haul
+  method: smartrecruiters
+  slug: u-haul
+  tier: bulk
+- name: Virtuous Software
+  method: ashby
+  slug: virtuous
+  tier: bulk
 filters:
   keywords_any_default:
   - new grad
@@ -1161,8 +1217,8 @@ filters:
   - campus
   - '2026'
   - '2027'
-  - 'I'
-  - 'II'
+  - I
+  - II
   keywords_role_default:
   - software engineer
   - software developer
@@ -1223,7 +1279,7 @@ filters:
   - manager
   - Sr. Engineer
   - Sr.
-  - 'III'
+  - III
   locations_default:
   - United States
   - USA
