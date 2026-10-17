@@ -8,8 +8,8 @@
   "AQR Capital": {
     "consecutive_failures": 0,
     "last_job_count": 56,
-    "last_success": "2026-10-17T03:35:06.204412+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:00.793503+00:00",
+    "runs": 267
   },
   "Abnormal Security": {
     "consecutive_failures": 0,
@@ -24,12 +24,12 @@
     "runs": 193
   },
   "Adobe": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "last_error": "Expecting value: line 1 column 1 (char 0)",
-    "last_failure": "2026-09-05T07:28:23.186856+00:00",
+    "last_failure": "2026-10-17T07:34:59.733582+00:00",
     "last_job_count": 40,
     "last_success": "2026-10-17T03:35:06.566963+00:00",
-    "runs": 266
+    "runs": 267
   },
   "Adyen": {
     "consecutive_failures": 0,
@@ -46,8 +46,8 @@
   "Airbnb": {
     "consecutive_failures": 0,
     "last_job_count": 173,
-    "last_success": "2026-10-17T03:35:04.682275+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:34:59.815485+00:00",
+    "runs": 267
   },
   "Airbyte": {
     "consecutive_failures": 0,
@@ -70,8 +70,8 @@
   "Akuna Capital": {
     "consecutive_failures": 0,
     "last_job_count": 40,
-    "last_success": "2026-10-17T03:35:06.204469+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:01.053663+00:00",
+    "runs": 267
   },
   "Align Technology": {
     "consecutive_failures": 0,
@@ -115,8 +115,8 @@
   "Anthropic": {
     "consecutive_failures": 0,
     "last_job_count": 656,
-    "last_success": "2026-10-17T03:35:06.070275+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:00.845934+00:00",
+    "runs": 267
   },
   "Anyscale": {
     "consecutive_failures": 0,
@@ -247,8 +247,8 @@
   "Brex": {
     "consecutive_failures": 0,
     "last_job_count": 260,
-    "last_success": "2026-10-17T03:35:04.805886+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:34:59.943496+00:00",
+    "runs": 267
   },
   "Brilliant": {
     "consecutive_failures": 0,
@@ -313,8 +313,8 @@
   "Cerebras": {
     "consecutive_failures": 0,
     "last_job_count": 122,
-    "last_success": "2026-10-17T03:35:06.398835+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:01.361522+00:00",
+    "runs": 267
   },
   "Chainguard": {
     "consecutive_failures": 0,
@@ -381,8 +381,8 @@
   "Cloudflare": {
     "consecutive_failures": 0,
     "last_job_count": 435,
-    "last_success": "2026-10-17T03:35:05.473769+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:01.216209+00:00",
+    "runs": 267
   },
   "Cloudinary": {
     "consecutive_failures": 0,
@@ -399,8 +399,8 @@
   "Coinbase": {
     "consecutive_failures": 0,
     "last_job_count": 226,
-    "last_success": "2026-10-17T03:35:04.979891+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:34:59.627780+00:00",
+    "runs": 267
   },
   "Column": {
     "consecutive_failures": 0,
@@ -446,15 +446,15 @@
   },
   "Databricks": {
     "consecutive_failures": 0,
-    "last_job_count": 898,
-    "last_success": "2026-10-17T03:35:06.358252+00:00",
-    "runs": 266
+    "last_job_count": 888,
+    "last_success": "2026-10-17T07:35:01.996946+00:00",
+    "runs": 267
   },
   "Datadog": {
     "consecutive_failures": 0,
     "last_job_count": 433,
-    "last_success": "2026-10-17T03:35:06.664027+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:02.511900+00:00",
+    "runs": 267
   },
   "Deel": {
     "consecutive_failures": 0,
@@ -471,8 +471,8 @@
   "Discord": {
     "consecutive_failures": 0,
     "last_job_count": 47,
-    "last_success": "2026-10-17T03:35:04.558213+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:34:59.461140+00:00",
+    "runs": 267
   },
   "Disney": {
     "consecutive_failures": 0,
@@ -537,8 +537,8 @@
   "Figma": {
     "consecutive_failures": 0,
     "last_job_count": 139,
-    "last_success": "2026-10-17T03:35:04.887190+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:00.051842+00:00",
+    "runs": 267
   },
   "Figure AI": {
     "consecutive_failures": 0,
@@ -716,8 +716,8 @@
   "IMC Trading": {
     "consecutive_failures": 0,
     "last_job_count": 172,
-    "last_success": "2026-10-17T03:35:06.442159+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:01.422606+00:00",
+    "runs": 267
   },
   "Improbable": {
     "consecutive_failures": 0,
@@ -764,14 +764,14 @@
   "Jane Street": {
     "consecutive_failures": 0,
     "last_job_count": 221,
-    "last_success": "2026-10-17T03:35:06.754747+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:01.866662+00:00",
+    "runs": 267
   },
   "Jump Trading": {
     "consecutive_failures": 0,
     "last_job_count": 101,
-    "last_success": "2026-10-17T03:35:06.704538+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:01.693844+00:00",
+    "runs": 267
   },
   "Justworks": {
     "consecutive_failures": 0,
@@ -868,8 +868,8 @@
   "Lyft": {
     "consecutive_failures": 0,
     "last_job_count": 183,
-    "last_success": "2026-10-17T03:35:05.064423+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:00.141393+00:00",
+    "runs": 267
   },
   "Lyra Health": {
     "consecutive_failures": 0,
@@ -965,8 +965,8 @@
   "MongoDB": {
     "consecutive_failures": 0,
     "last_job_count": 401,
-    "last_success": "2026-10-17T03:35:07.280045+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.283804+00:00",
+    "runs": 267
   },
   "Motive": {
     "consecutive_failures": 0,
@@ -981,12 +981,12 @@
     "runs": 193
   },
   "NVIDIA": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
     "last_error": "Expecting value: line 1 column 1 (char 0)",
-    "last_failure": "2026-09-05T07:28:23.590216+00:00",
+    "last_failure": "2026-10-17T07:35:00.286951+00:00",
     "last_job_count": 40,
     "last_success": "2026-10-17T03:35:07.568671+00:00",
-    "runs": 266
+    "runs": 267
   },
   "Natera": {
     "consecutive_failures": 0,
@@ -1059,8 +1059,8 @@
     "last_error": "GET https://boards-api.greenhouse.io/v1/boards/notion/jobs failed after 3 attempts: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/notion/jobs?content=true",
     "last_failure": "2026-08-16T23:42:56.123086+00:00",
     "last_job_count": 128,
-    "last_success": "2026-10-17T03:35:06.878453+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:02.067333+00:00",
+    "runs": 267
   },
   "Nubank": {
     "consecutive_failures": 0,
@@ -1071,8 +1071,8 @@
   "Nuro": {
     "consecutive_failures": 0,
     "last_job_count": 108,
-    "last_success": "2026-10-17T03:35:07.061915+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:02.115255+00:00",
+    "runs": 267
   },
   "Nylas": {
     "consecutive_failures": 0,
@@ -1089,8 +1089,8 @@
   "Old Mission Capital": {
     "consecutive_failures": 0,
     "last_job_count": 41,
-    "last_success": "2026-10-17T03:35:07.017884+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:01.950290+00:00",
+    "runs": 267
   },
   "Olo": {
     "consecutive_failures": 0,
@@ -1101,8 +1101,8 @@
   "OpenAI": {
     "consecutive_failures": 0,
     "last_job_count": 815,
-    "last_success": "2026-10-17T03:35:08.006114+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:02.952042+00:00",
+    "runs": 267
   },
   "Optiver": {
     "consecutive_failures": 0,
@@ -1137,8 +1137,8 @@
   "Palantir": {
     "consecutive_failures": 0,
     "last_job_count": 100,
-    "last_success": "2026-10-17T03:35:07.640493+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.304327+00:00",
+    "runs": 267
   },
   "Paradox": {
     "consecutive_failures": 0,
@@ -1203,8 +1203,8 @@
   "Point72": {
     "consecutive_failures": 0,
     "last_job_count": 221,
-    "last_success": "2026-10-17T03:35:07.124818+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:02.256573+00:00",
+    "runs": 267
   },
   "Poshmark": {
     "consecutive_failures": 0,
@@ -1213,13 +1213,13 @@
     "runs": 193
   },
   "Postman": {
-    "consecutive_failures": 176,
+    "consecutive_failures": 177,
     "failure_alerted_at_run": 227,
     "last_error": "GET https://boards-api.greenhouse.io/v1/boards/postman/jobs failed after 3 attempts: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/postman/jobs?content=true",
-    "last_failure": "2026-10-17T03:35:10.275738+00:00",
+    "last_failure": "2026-10-17T07:35:05.486037+00:00",
     "last_job_count": 47,
     "last_success": "2026-09-16T18:48:10.017573+00:00",
-    "runs": 266
+    "runs": 267
   },
   "Postscript": {
     "consecutive_failures": 0,
@@ -1320,14 +1320,14 @@
   "Robinhood": {
     "consecutive_failures": 0,
     "last_job_count": 153,
-    "last_success": "2026-10-17T03:35:05.171817+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:00.295213+00:00",
+    "runs": 267
   },
   "Roblox": {
     "consecutive_failures": 0,
-    "last_job_count": 261,
-    "last_success": "2026-10-17T03:35:07.409960+00:00",
-    "runs": 266
+    "last_job_count": 262,
+    "last_success": "2026-10-17T07:35:03.450750+00:00",
+    "runs": 267
   },
   "Rocket Lab": {
     "consecutive_failures": 0,
@@ -1354,16 +1354,18 @@
     "runs": 193
   },
   "Salesforce": {
-    "consecutive_failures": 0,
+    "consecutive_failures": 1,
+    "last_error": "Expecting value: line 1 column 1 (char 0)",
+    "last_failure": "2026-10-17T07:35:00.445257+00:00",
     "last_job_count": 40,
     "last_success": "2026-10-17T03:35:06.878529+00:00",
-    "runs": 266
+    "runs": 267
   },
   "Samsara": {
     "consecutive_failures": 0,
     "last_job_count": 261,
-    "last_success": "2026-10-17T03:35:07.654607+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.838738+00:00",
+    "runs": 267
   },
   "Sanity": {
     "consecutive_failures": 0,
@@ -1404,8 +1406,8 @@
   "Sentry": {
     "consecutive_failures": 0,
     "last_job_count": 46,
-    "last_success": "2026-10-17T03:35:07.299117+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.080837+00:00",
+    "runs": 267
   },
   "ServiceNow": {
     "consecutive_failures": 0,
@@ -1422,8 +1424,8 @@
   "Sigma Computing": {
     "consecutive_failures": 0,
     "last_job_count": 75,
-    "last_success": "2026-10-17T03:35:07.456982+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.511438+00:00",
+    "runs": 267
   },
   "SimpliSafe": {
     "consecutive_failures": 0,
@@ -1458,8 +1460,8 @@
   "Snowflake": {
     "consecutive_failures": 0,
     "last_job_count": 359,
-    "last_success": "2026-10-17T03:35:08.019255+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.865757+00:00",
+    "runs": 267
   },
   "Snyk": {
     "consecutive_failures": 0,
@@ -1509,8 +1511,8 @@
   "Squarepoint Capital": {
     "consecutive_failures": 0,
     "last_job_count": 92,
-    "last_success": "2026-10-17T03:35:07.683141+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.429674+00:00",
+    "runs": 267
   },
   "StarTree": {
     "consecutive_failures": 0,
@@ -1533,8 +1535,8 @@
   "Stripe": {
     "consecutive_failures": 0,
     "last_job_count": 731,
-    "last_success": "2026-10-17T03:35:07.005556+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.058688+00:00",
+    "runs": 267
   },
   "Stytch": {
     "consecutive_failures": 0,
@@ -1617,8 +1619,8 @@
   "Together AI": {
     "consecutive_failures": 0,
     "last_job_count": 78,
-    "last_success": "2026-10-17T03:35:07.704706+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:03.548563+00:00",
+    "runs": 267
   },
   "TripAdvisor": {
     "consecutive_failures": 0,
@@ -1635,8 +1637,8 @@
   "Twilio": {
     "consecutive_failures": 0,
     "last_job_count": 133,
-    "last_success": "2026-10-17T03:35:05.663177+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:01.317996+00:00",
+    "runs": 267
   },
   "Twitch": {
     "consecutive_failures": 0,
@@ -1733,8 +1735,8 @@
   "Waymo": {
     "consecutive_failures": 0,
     "last_job_count": 362,
-    "last_success": "2026-10-17T03:35:08.323969+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:04.016358+00:00",
+    "runs": 267
   },
   "Wealthfront": {
     "consecutive_failures": 0,
@@ -1826,8 +1828,8 @@
   "Zscaler": {
     "consecutive_failures": 0,
     "last_job_count": 366,
-    "last_success": "2026-10-17T03:35:08.219877+00:00",
-    "runs": 266
+    "last_success": "2026-10-17T07:35:04.380313+00:00",
+    "runs": 267
   },
   "Zuora": {
     "consecutive_failures": 0,
